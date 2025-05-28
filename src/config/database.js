@@ -8,7 +8,7 @@ const { Sequelize } = require('sequelize');
 // USE VARIÁVEIS DE AMBIENTE (.env com dotenv) PARA CREDENCIAIS EM PROJETOS REAIS.
 const sequelize = new Sequelize('talisma', 'talisma', 'talisma', {
   host: 'geral_talismabd', // Endereço do seu servidor PostgreSQL (geralmente localhost)
-  port: 5433,      // Porta padrão do PostgreSQL
+  port: 5432,      // Porta padrão do PostgreSQL
   dialect: 'postgres', // Especifica o dialeto do banco de dados
   logging: false, // Defina como true (ou console.log) para ver as queries SQL executadas
   dialectOptions: {
